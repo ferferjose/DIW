@@ -1,0 +1,34 @@
+.dashboard{
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 15% 80%; /*15vw 85vw*/
+    grid-template-rows: 10vw 90vw;
+    height: 100vh;
+}
+header{
+    background-color: lightblue;
+    grid-column: 1 / 3;
+    display: flex;
+}
+header>div{
+    flex-grow: 1;
+}
+header>button{
+    border: none;
+    margin: 0.2rem;
+}
+nav{
+    background-color: lightyellow;
+}
+main{
+    background-color: lightgreen;
+}
+.fila{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.fila>div{
+    border: 1px solid black;
+    width: 100%;
+}

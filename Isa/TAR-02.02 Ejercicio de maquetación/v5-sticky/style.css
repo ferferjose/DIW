@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+body{
+    width: 1260px;
+    height: 500px;
+    background-color: green;
+}
+/* Layout */
+main{
+    background-color: aquamarine;
+    display: flow-root; /* se usa para que se ajuste al contenido */
+    /* overflow: hidden; */
+}
+/* Elementos del layout */
+#izquierda{
+    width: 780px; /*800px - 20px de padding(10l+10r)*/
+    height: 1000px;
+    margin: 0 0 0 20px;
+    padding: 30px 10px;
+    background-color: red;
+    float: left;
+}
+#derecha{
+    width: 340px; /* 400px - 60px (30l + 30r) */
+    height: 300px;
+    margin: 0 20px 0 20px;
+    padding: 50px 30px;
+    background-color: blue;
+    float: left;
+    position: relative; /* esto es para que los de posicionamiento absoluto vean este contenedor
+                        y no se posicionen con respecto al body 
+                        ocupa espacio en el flujo*/
+}
+
+/* Elementos Izquierda */
+#izquierda p{
+    margin-bottom: 4 em;
+}
+form{
+    border: 1px solid black;
+    padding: 1em 0 1em 70px;
+}
+label{
+    display: block;
+}
+input[type="text"]{
+    width: 490px;
+    padding-left: 10px;
+}
+input[type="submit"]{
+    width: 150px;
+    height: 2em;
+    background-color: #d8d8d8;
+}
+/* Elementos Derecha */
+img{
+    width: 50%;
+}
+
+/* Footer */
+footer{
+    clear: both;
+    background-color: gray;
+    width: 1260px;
+    height: 100px;
+}
+
+
+.absoluto{
+    position: absolute; /* Este position va a hacer que se salga del flujo dejando su espacio libre y pudiendo colcarlo
+                        posicionarlo donde se quiera*/
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    /* pongo top 0 y left 0 para que se coloque a la izquierda y arriba de su caja contenedora pero al no tener posicionamiento relativo se pone con respecto al body */
+}
+.fixed{
+    position: fixed; /* Esto va a fijar el contenido donde se quiera y se va a quedar ahi siempre
+                        no ocupa espacio en el flujo*/
+    background-color: chocolate;
+    top: 0;
+    left: 0;
+}
+.sticky{
+    background-color: darkgoldenrod;
+    position: sticky; /* va a fijar el elemento pero siempre se verá en pantalla 
+                        no ocupa espacio en el flujo*/
+    top: 0;
+    left: 0;
+    width: 100%;
+}

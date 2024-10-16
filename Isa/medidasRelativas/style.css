@@ -1,0 +1,26 @@
+
+#em{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+
+}
+#em>div{
+    background-color: blue;
+    width: 1em;
+    height: 1em;
+    margin: 0 auto;
+}
+#rem{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    
+}
+#rem>div{
+    background-color: blue;
+    width: 1em;
+    height: 1em;
+    margin: 0 auto;
+    
+}
