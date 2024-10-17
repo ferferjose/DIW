@@ -72,8 +72,9 @@ footer{
 
 
 .absoluto{
-    position: absolute; /* Este position va a hacer que se salga del flujo dejando su espacio libre y pudiendo colcarlo
-                        posicionarlo donde se quiera*/
+    position: absolute;
+    height: 6%;
+    width:20%;
     background-color: black;
     color: white;
     top: 0;
@@ -81,12 +82,23 @@ footer{
     /* pongo top 0 y left 0 para que se coloque a la izquierda y arriba de su caja contenedora pero al no tener posicionamiento relativo se pone con respecto al body */
 }
 .fixed{
-    position: fixed; /* Esto va a fijar el contenido donde se quiera y se va a quedar ahi siempre
-                        no ocupa espacio en el flujo*/
+    height: 6%;
+    width:20%;
+    position: fixed;
     background-color: chocolate;
-    top: 0;
-    left: 0;
+    top: 30%;
+    left: 0%;
 }
+/* segunda practica */
+.relativo{
+    width: 50%;
+    background-color: rosybrown;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    /* Caja relativa que ocupa espacio en el flujo pero que esta desplazada dentro de su contenedor */
+}
+/* tercera practica */
 .sticky{
     background-color: darkgoldenrod;
     position: sticky; /* va a fijar el elemento pero siempre se verá en pantalla 

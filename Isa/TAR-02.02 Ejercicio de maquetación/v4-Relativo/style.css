@@ -72,14 +72,28 @@ footer{
 /* Primera versión - Posicionamiento Absoluto y Fixed */
 .absoluto{
     position: absolute;
+    height: 6%;
+    width:20%;
     background-color: black;
+    color: white;
     top: 0;
     left: 0;
     /* pongo top 0 y left 0 para que se coloque a la izquierda y arriba de su caja contenedora pero al no tener posicionamiento relativo se pone con respecto al body */
 }
 .fixed{
+    height: 6%;
+    width:20%;
     position: fixed;
     background-color: chocolate;
-    top: 10;
-    left: 0;
+    top: 30%;
+    left: 0%;
+}
+/* Segunda practica */
+.relativo{
+    width: 50%;
+    background-color: rosybrown;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    /* Caja relativa que ocupa espacio en el flujo pero que esta desplazada dentro de su contenedor */
 }
