@@ -90,7 +90,7 @@ footer{
 .sticky{
     background-color: darkgoldenrod;
     position: sticky; /* va a fijar el elemento pero siempre se verá en pantalla 
-                        no ocupa espacio en el flujo*/
+                        ocupa el espacio del inicio, en el croll no se modifica el flujo*/
     top: 0;
     left: 0;
     width: 100%;
