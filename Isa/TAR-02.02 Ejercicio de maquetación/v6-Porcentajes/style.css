@@ -23,10 +23,10 @@ main{
     float: left;
 }
 #derecha{
-    width: 29.365%; /*370x100 / 1260*/
-    height: 300px;
-    margin: 0  1.587%;  /*20x100 / 1260*/
-    padding: 50px 0 0 2.381%; /*30x100 / 1260*/
+    width: 370px; /* 400px - 30px (30l) */
+    height: 350px;
+    margin: 0 20px 0 20px;
+    padding: 50px 0 0 30px;
     background-color: blue;
     float: left;
     position: relative; /* esto es para que los de posicionamiento absoluto vean este contenedor
