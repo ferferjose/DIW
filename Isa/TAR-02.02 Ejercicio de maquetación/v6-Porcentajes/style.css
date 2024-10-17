@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-html{
-    font-size: 62.5%; /* 1rem = 10px */
-}
 body{
     width: 1260px;
     height: 500px;
@@ -18,18 +15,18 @@ main{
 }
 /* Elementos del layout */
 #izquierda{
-    width: 780px; /*800px - 20px de padding(10l+10r)*/
+    width: 61.905%; /*780x100 / 1260*/
     height: 1000px;
-    margin: 0 0 0 20px;
-    padding: 30px 10px;
+    margin: 0 0 0 1.587%; /*20x100 / 1260*/
+    padding: 30px 0.794%; /*10x100 / 1260*/
     background-color: red;
     float: left;
 }
 #derecha{
-    width: 370px; /* 400px - 30px (30l) */
-    height: 350px;
-    margin: 0 20px 0 20px;
-    padding: 50px 30px 0 0;
+    width: 29.365%; /*370x100 / 1260*/
+    height: 300px;
+    margin: 0  1.587%;  /*20x100 / 1260*/
+    padding: 50px 0 0 2.381%; /*30x100 / 1260*/
     background-color: blue;
     float: left;
     position: relative; /* esto es para que los de posicionamiento absoluto vean este contenedor
@@ -43,24 +40,24 @@ main{
 }
 form{
     border: 1px solid black;
-    padding: 1em 0 1em 70px;
+    padding: 1em 0 1em 8.974%; /*70x100 / 780*/
 }
 label{
     display: block;
 }
 input[type="text"]{
-    width: 490px;
-    padding-left: 10px;
+    width: 62.821%; /*490x100 / 780*/
+    padding-left: 1.282%; /*10x100 / 780*/
 }
 input[type="submit"]{
     display: block;
-    width: 150px;
+    width: 19.231%; /*150x100 / 780*/
     height: 2em;
     background-color: #d8d8d8;
 }
 /* Elementos Derecha */
 img{
-    width: 150px;
+    width: 40.541%; /*10x100 / 370*/
 }
 
 /* Footer */
@@ -76,7 +73,7 @@ footer{
 .absoluto{
     position: absolute;
     height: 60px;
-    width:100px;
+    width: 27.027%; /*100x100 / 370*/
     background-color: black;
     color: white;
     top: 0;
@@ -85,7 +82,7 @@ footer{
 }
 .fixed{
     height: 60px;
-    width:100px;
+    width: 27.027%; /*100x100 / 370 aunque es con respecto al body su posición*/
     position: fixed;
     background-color: chocolate;
     top: 30px;
@@ -93,10 +90,20 @@ footer{
 }
 /* Segunda practica */
 .relativo{
-    width:100px;
+    width: 27.027%; /*100x100 / 370*/
     background-color: rosybrown;
     position: relative;
     top: 30px;
-    left: 75px;
+    left: 20.270%;
     /* Caja relativa que ocupa espacio en el flujo pero que esta desplazada dentro de su contenedor */
 }
+/* tercera practica */
+.sticky{
+    background-color: darkgoldenrod;
+    position: sticky; /* va a fijar el elemento pero siempre se verá en pantalla 
+                        ocupa el espacio del inicio, en el croll no se modifica el flujo*/
+    top: 0;
+    left: 0; /* Este left con respecto al contenedor de la izquierda */
+    width: 27.027%; /*100x100 / 370*/
+}
+

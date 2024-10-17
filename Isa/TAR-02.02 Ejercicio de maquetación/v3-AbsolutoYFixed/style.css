@@ -26,17 +26,17 @@ main{
     float: left;
 }
 #derecha{
-    width: 340px; /* 400px - 60px (30l + 30r) */
-    height: 300px;
+    width: 370px; /* 400px - 30px (30l) */
+    height: 350px;
     margin: 0 20px 0 20px;
-    padding: 50px 30px;
+    padding: 50px 30px 0 0;
     background-color: blue;
     float: left;
 }
 
 /* Elementos Izquierda */
 #izquierda p{
-    margin-bottom: 4 em;
+    margin-bottom: 4em;
 }
 form{
     border: 1px solid black;
@@ -50,13 +50,14 @@ input[type="text"]{
     padding-left: 10px;
 }
 input[type="submit"]{
+    display: block;
     width: 150px;
     height: 2em;
     background-color: #d8d8d8;
 }
 /* Elementos Derecha */
 img{
-    width: 50%;
+    width: 150px;
 }
 
 /* Footer */
@@ -71,8 +72,8 @@ footer{
 /* Primera versión - Posicionamiento Absoluto y Fixed */
 .absoluto{
     position: absolute;
-    height: 6%;
-    width:20%;
+    height: 60px;
+    width:100px;
     background-color: black;
     color: white;
     top: 0;
@@ -80,10 +81,10 @@ footer{
     /* pongo top 0 y left 0 para que se coloque a la izquierda y arriba de su caja contenedora pero al no tener posicionamiento relativo se pone con respecto al body */
 }
 .fixed{
-    height: 6%;
-    width:20%;
+    height: 60px;
+    width:100px;
     position: fixed;
     background-color: chocolate;
-    top: 30%;
-    left: 0%;
+    top: 30px;
+    left: 0;
 }
